@@ -55,7 +55,7 @@ const Login = () => {
       if (response?.data?.accessToken) {
         storeUserInfo({ accessToken: response?.data.accessToken });
         toast.success("Congratulations! You have successfully logged in");
-        router.push("/");
+        router.push("/dashboard");
       } else {
       /*   console.log(response); */
         setError(response.message);

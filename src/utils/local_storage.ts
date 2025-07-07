@@ -6,7 +6,6 @@ export const setToLocalStorage = (key: string, accessToken: string) => {
   }
   console.log(key, accessToken, "from local storage function")
   return localStorage.setItem(key, accessToken);
-
 };
 
 

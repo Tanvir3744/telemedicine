@@ -62,7 +62,7 @@ const Register = () => {
         if (result?.data.accessToken) {
           storeUserInfo({ accessToken: result?.data.accessToken });
           toast.success("Congratulations! You have successfully logged in");
-          router.push("/");
+          router.push("/dashboard");
         }
       }
       console.log(response?.message, response);
